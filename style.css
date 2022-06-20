@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,200;1,400&display=swap');
+*{
+  border:none;
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;  
+}
+
+:root{
+    --super-purple: #170077;
+    --dark-purple: #0b032b;
+    --mediumDark-purple: #10002e;
+    --medium-purple: #16004c;
+    --mediumLight-purple: #160d6e;
+    --light-purple: #6462b5;
+    --grey: #a0a0aa;
+    --light-grey: #c2c2ce;
+    --white: #f2f2fc;
+    --fontColorTitle: #acf100;
+    --fontColorSubTitle: #c7ff3a;
+    --fontCorlorPlaceHolder: #e9ffa4;
+    --fontColorCredits: #f3ffd6;
+
+
+}
+
+body{
+    background-color: var(--dark-purple);
+}
+
+.mainBody{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex:1;
+    width: 100vw;
+    height: 100vh;
+}
+
+.divMainContent{
+    display:flex;
+    width: 100vw;
+    height: 100%;
+}
+
+.left-div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100%;
+    gap: 50px;
+}
+
+.left-div > h1{
+    color: var(--fontColorTitle);
+    font-size: 2em;
+}
+
+.left-div > img{
+    width: 250px;
+    height: 250px;
+}
+
+.right-div{
+    display:flex;
+    fleX:1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100%;
+    gap: 50px;
+    color: var(--fontColorSubTitle);
+}
+
+.card-right-div{
+   width: 60%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: clamp(10px, 5%, 100px);
+   box-sizing: border-box;
+   border-radius: clamp(25px, 25%, 5px);
+   background-color: var(--mediumLight-purple); 
+   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card-right-div > h1{
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 800;
+    width: 100%;
+    height: 100%;
+}
+
+.divNotas{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.inputNotas{
+    width: 100%;
+    background-color: var(--light-grey);
+    border: 2px solid rgba(0,0,0,0);
+    outline: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    padding: 20px 10px 10px;
+    font-weight: 600;
+    color: var(--medium-purple)
+    
+}
+
+
+.inputNotas:focus{
+    background-color: var(--white);
+    color: var(--mediumLight-purple);
+    border: 2px solid var(--fontColorTitle);
+}
+
+
+.nota-label > span{
+    position: absolute;
+    font-size: 0.8em;
+    color: var(--medium-purple);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 17px 10px;
+    cursor:text;
+    transition: all 500ms ease;
+}
+
+
+.nota-label > span:focus{
+    color: var(--mediumLight-purple);
+}
+
+.nota-label .span-active{
+    font-size: 0.5;
+    margin: 5px 10px;
+    color: var(--mediumLight-purple);
+}
+
+
+.mediaButton{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    outline: none;
+    box-sizing: border-box;
+    background-color: var(--fontColorTitle);
+    cursor: pointer;
+    color: var(--dark-purple);
+
+}
+
+.mediaButton:disabled{
+    cursor: not-allowed;
+    background-color: var(--white);
+    color: var(--light-grey);
+}
+
+.footer{
+    color: var(--fontColorCredits);
+    font-style: italic;
+    font-weight: 200;
+}
+
+
+@media only screen and (max-width: 950px){
+    .divMainContent{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        margin:0;
+    }
+    .left-div{
+        width: 50%;
+        height: 40%;
+        margin-bottom: 5px;
+    }
+    .right-div{
+        width: 50%;
+        height: 60%;
+    }
+    .card-right-div{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .divMainContent{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        margin:0;
+    }
+
+    .left-div{
+        flex:0.5;
+        height: 5vh;
+        margin-top: 20px;
+    }
+
+    .left-div h1{
+        display: none;
+    }
+    .left-div img{
+        width: 200px;
+        height: 350px;
+    }
+    .right-div{
+        flex:1;
+        width: 95%;
+        margin-bottom: 10px;
+        height: 100%;
+    }
+    .card-right-div{
+        width: 100%;
+        font-size: 0.85em;        
+    }
+
+    .card-right-div h1{
+        font-size: 1.2em;
+    }
+}

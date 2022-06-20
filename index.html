@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="imagem/x-icon" href="./assets/atomIcon.svg">
+    <title>Bem vindo, professor!</title>
+    <script src="scriptFuncionalidades.js" defer></script>
+    <script src="calculandoMedia.js" defer></script>
+    
+</head>
+<body>
+    <div class="mainBody">
+    <div class="divMainContent">
+        <div class="left-div">
+            <h1>Bem vindo, professor!</h1>
+            <img src="./assets/professora.svg" alt="Professora em frente ao quadro, ao seu lado há uma mesa com livros em cima.">
+        </div>
+        <div class="right-div">
+            <div class="card-right-div">
+            <h1>Avalie seu aluno:</h1>
+            <div class="divNotas">
+              <label class="nota-label">
+                <span>Nota 1</span>
+                <input type="number" name="nota1" class="inputNotas" min="0" max="10" step=".1">
+              </label> 
+
+              <label class="nota-label">
+                <span>Nota 2</span>
+                <input type="number" name="nota2" class="inputNotas" min="0" max="10" step=".1">
+              </label>
+              <button type="button" class="mediaButton" disabled>Calcular média</button>
+            </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <p>Todos os créditos reservados &reg;</p>
+    </div>
+    </div>
+    
+</body>
+</html>
