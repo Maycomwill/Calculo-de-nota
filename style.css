@@ -228,39 +228,8 @@ body{
     }
 }
 
-@media only screen and (min-width: 601px){
-    .divMainContent{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 90vh;
-        margin:0;
-    }
 
-    .left-div h1{
-        display: none;
-    }
-
-    .left-div img{
-        height: 100%;
-    }
-    .left-div{
-
-        width: 50%;
-        height: 35%;
-        margin-bottom: 5px;
-    }
-    .right-div{
-        width: 85%;
-        height: 40%;
-    }
-    .card-right-div{
-        width: 100%;
-    }   
-}
-
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 650px){
     .divMainContent{
         flex-direction: column;
         justify-content: center;
